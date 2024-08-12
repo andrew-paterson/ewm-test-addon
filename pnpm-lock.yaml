@@ -82,6 +82,9 @@ devDependencies:
   ember-try:
     specifier: ^2.0.0
     version: 2.0.0
+  ember-window-mock:
+    specifier: ^1.0.1
+    version: 1.0.1
   eslint:
     specifier: ^7.32.0
     version: 7.32.0
@@ -1458,6 +1461,18 @@ packages:
       calculate-cache-key-for-tree: 2.0.0
       ember-cli-babel: 7.26.11
       ember-cli-version-checker: 5.1.2
+      semver: 7.6.3
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@embroider/addon-shim@1.8.9:
+    resolution: {integrity: sha512-qyN64T1jMHZ99ihlk7VFHCWHYZHLE1DOdHi0J7lmn5waV1DoW7gD8JLi1i7FregzXtKhbDc7shyEmTmWPTs8MQ==}
+    engines: {node: 12.* || 14.* || >= 16}
+    dependencies:
+      '@embroider/shared-internals': 2.6.2
+      broccoli-funnel: 3.0.8
+      common-ancestor-path: 1.0.1
       semver: 7.6.3
     transitivePeerDependencies:
       - supports-color
@@ -4020,6 +4035,10 @@ packages:
     engines: {node: '>= 12'}
     dev: true
 
+  /common-ancestor-path@1.0.1:
+    resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
+    dev: true
+
   /common-tags@1.8.2:
     resolution: {integrity: sha512-gk/Z852D2Wtb//0I+kRFNKKE9dIIVirjoqPoA1wJU+XePVXZfGeBpk45+A1rKO4Q43prqWBNY/MiIeRLbPWUaA==}
     engines: {node: '>=4.0.0'}
@@ -5475,6 +5494,16 @@ packages:
       walk-sync: 2.2.0
     transitivePeerDependencies:
       - encoding
+      - supports-color
+    dev: true
+
+  /ember-window-mock@1.0.1:
+    resolution: {integrity: sha512-K7o0o+t1DEWLsaw+TtS/D2t31pPUTYdabG6AKKKxJxZdgKNLwyMtlK7+X2UV0kRnr0CgiOeOMenvck0+8XbDmA==}
+    dependencies:
+      '@embroider/addon-shim': 1.8.9
+      '@embroider/macros': 1.16.5
+    transitivePeerDependencies:
+      - '@glint/template'
       - supports-color
     dev: true
 
